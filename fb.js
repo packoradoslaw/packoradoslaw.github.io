@@ -40,7 +40,7 @@ window.fbAsyncInit = function() {
 
   function wyswietl_dane(user){
     let dane = `
-		<table style="margin-left: auto; margin-right: auto; text-align: left; padding:15px">
+		<table style="margin-left: auto; margin-right: auto; text-align: left">
 		<tr><td colspan="2" style="text-align: center">Twoje dane:</td></tr>
 		<tr><td>Imię</td><td>${user.first_name}</td></tr>
 		<tr><td>Nazwisko</td><td>${user.last_name}</td></tr>
