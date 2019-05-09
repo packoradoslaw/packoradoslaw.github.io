@@ -46,7 +46,6 @@ window.fbAsyncInit = function() {
 		<tr><td>Nazwisko</td><td>${user.last_name}</td></tr>
 		<tr><td>ID</td><td>${user.id}</td></tr>
 		<tr><td>E-mail</td><td>${user.email}</td></tr>
-		// <tr><td>Data urodzenia</td><td>${user.birthday}</td></tr>
 		<tr><td>Zdjęcie</td><td><img src="${user.picture.data.url}"/></td></tr>
 		</table>
 		`;
