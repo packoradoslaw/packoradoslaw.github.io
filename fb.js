@@ -40,7 +40,7 @@ window.fbAsyncInit = function() {
 
   function wyswietl_dane(user){
     let dane = `
-		<table style="margin-left: auto; margin-right: auto; text-align: left">
+		<table style="margin-left: auto; margin-right: auto; text-align: left; padding:15px">
 		<tr><td colspan="2" style="text-align: center">Twoje dane:</td></tr>
 		<tr><td>Imię</td><td>${user.first_name}</td></tr>
 		<tr><td>Nazwisko</td><td>${user.last_name}</td></tr>
@@ -56,11 +56,9 @@ window.fbAsyncInit = function() {
   function wyswietl(czy_zalogowany){
     if(czy_zalogowany){ 
       document.getElementById('logout').style.display = 'block';
-      // document.getElementById('app').style.display = 'block';
       document.getElementById('fb-btn').style.display = 'none';
     } else {  
       document.getElementById('logout').style.display = 'none';
-      // document.getElementById('app').style.display = 'none';
       document.getElementById('fb-btn').style.display = 'block';
       document.getElementById('app').innerHTML = `Zaloguj się przyciskiem w prawym górnym rogu strony`;
     }
