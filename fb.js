@@ -18,11 +18,9 @@ window.fbAsyncInit = function() {
    }(document, 'script', 'facebook-jssdk'));
    function statusChangeCallback(response){
      if(response.status === 'connected'){
-       console.log('Zalogowany');
        wyswietl(true);
        testAPI();
      } else {
-       console.log('Niezalogowany');
        wyswietl(false);
      }
    }
@@ -42,7 +40,7 @@ window.fbAsyncInit = function() {
 
   function wyswietl_dane(user){
     let dane = `
-		<table width="400px">
+		<table style="width:400px">
 		<tr><td colspan="2">Twoje dane:</td></tr>
 		<tr><td>Imię</td><td>${user.first_name}</td></tr>
 		<tr><td>Nazwisko</td><td>${user.last_name}</td></tr>
