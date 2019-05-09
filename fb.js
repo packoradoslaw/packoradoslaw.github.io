@@ -41,12 +41,12 @@ window.fbAsyncInit = function() {
   function wyswietl_dane(user){
     let dane = `
 		<table style="margin-left: auto; margin-right: auto; text-align: left">
-		<tr><td colspan="2" style="text-align: center">Twoje dane:</td></tr>
-		<tr><td>Imię</td><td>${user.first_name}</td></tr>
-		<tr><td>Nazwisko</td><td>${user.last_name}</td></tr>
-		<tr><td>ID</td><td>${user.id}</td></tr>
-		<tr><td>E-mail</td><td>${user.email}</td></tr>
-		<tr><td>Zdjęcie</td><td><img src="${user.picture.data.url}"/></td></tr>
+		<tr style="padding-bottom:15px"><td colspan="2" style="text-align: center">Twoje dane:</td></tr>
+		<tr><td style="padding-right:10px">Imię</td><td>${user.first_name}</td></tr>
+		<tr><td style="padding-right:10px">Nazwisko</td><td>${user.last_name}</td></tr>
+		<tr><td style="padding-right:10px">ID</td><td>${user.id}</td></tr>
+		<tr><td style="padding-right:10px">E-mail</td><td>${user.email}</td></tr>
+		<tr><td style="padding-right:10px">Zdjęcie</td><td><img src="${user.picture.data.url}"/></td></tr>
 		</table>
 		`;
     document.getElementById('app').innerHTML = dane;
