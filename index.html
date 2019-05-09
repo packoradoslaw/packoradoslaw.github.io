@@ -8,16 +8,12 @@
 </head>
 <body>
 	<div id="gora">
-		<table style="width:100%">
+		<table style="width:100%; margin:auto">
 		<tr>
 		<td><a href="http://www.radoslawpacko.cba.pl">Strona Główna</a></td>
 		<td style="font-size: 30px; font-family: 'Tinos', cursive; text-align: center"> Radosław Paćko - aplikacja FB </td>
 		<td style="text-align: right"">
-		<fb:login-button
-            id="fb-btn"
-            scope="public_profile,email"
-            onlogin="checkLoginState();">
-        </fb:login-button>
+		<fb:login-button id="fb-btn" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
 		<a id="logout" style="display: none" href="#" onclick="wyloguj()">Wyloguj się</a>
 		</td>
 		</tr>
