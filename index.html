@@ -7,13 +7,15 @@
 	<script src="fb.js" ></script> 
 </head>
 <body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.3&appId=421424038643764&autoLogAppEvents=1"></script>
 	<div id="gora">
 		<table style="width:100%; margin:auto">
 		<tr>
 		<td style="width:15%"><a href="http://www.radoslawpacko.cba.pl">Strona Główna</a></td>
 		<td style="font-size: 30px; font-family: 'Tinos', cursive; text-align: center; width:70%"> Radosław Paćko - aplikacja FB </td>
 		<td style="text-align: right; width:15%">
-		<fb:login-button id="fb-btn" scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+		<div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false"></div>
 		<a id="logout" href="#" onclick="wyloguj()">Wyloguj się</a>
 		</td>
 		</tr>
