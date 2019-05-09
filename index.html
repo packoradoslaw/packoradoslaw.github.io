@@ -10,14 +10,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>  
 </head>
 <body>
-	<div id="n1">
+	<div id="gora">
+		<table>
+		<tr>
+		<td><td><a href="www.radoslawpacko.cba.pl">Strona Główna</a></tr></td>
+		<td colspan="4" style="font-size: 30px; font-family: Lilita+One"> Radosław Paćko - aplikacja FB </td>
+		<td>
 		<fb:login-button
             id="fb-btn"
             scope="public_profile,email"
             onlogin="checkLoginState();">
         </fb:login-button>
 		<a id="logout" class="display: none" href="#" onclick="wyloguj()">Wyloguj się</a>
+		</td>
+		</tr>
+		</table>
+		<hr />
 	</div>
-	<div id="app" style="font-size: 20px; font-family: Tinos">Zaloguj sie</div>
+	<div id="app" style="font-size: 20px; font-family: Tinos"></div>
 </body>
 </html>
