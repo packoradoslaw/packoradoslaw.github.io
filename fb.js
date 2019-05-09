@@ -42,13 +42,13 @@ window.fbAsyncInit = function() {
 
   function wyswietl_dane(user){
     let dane = `
-		Witaj, ${user.name}!
-        Imię: ${user.first_name}
-        Nazwisko: ${user.last_name}
-        ID: ${user.id}</li>
-        Email: ${user.email}
-        Zdjęcie profilowe: <img src="${user.picture.data.url}"/>
-    `;
+		Witaj, ${user.name}!<br/>
+		Oto twoje dane:<br/>
+        Imię: ${user.first_name}<br/>
+        Nazwisko: ${user.last_name}<br/>
+        ID: ${user.id}<br/>
+        Email: ${user.email}<br/>
+        Zdjęcie profilowe: <img src="${user.picture.data.url}"/>`;
     document.getElementById('app').innerHTML = dane;
   }
 
