@@ -42,26 +42,29 @@ window.fbAsyncInit = function() {
 
   function wyswietl_dane(user){
     let dane = `
-		Witaj, ${user.name}!<br/>
-		Oto twoje dane:<br/>
-        Imię: ${user.first_name}<br/>
-        Nazwisko: ${user.last_name}<br/>
-        ID: ${user.id}<br/>
-        Email: ${user.email}<br/>
-        Zdjęcie profilowe: <img src="${user.picture.data.url}"/>`;
+		<table width="400px">
+		<tr><td colspan="2">Twoje dane:</td></tr>
+		<tr><td>Imię</td><td>${user.first_name}</td></tr>
+		<tr><td>Nazwisko</td><td>${user.last_name}</td></tr>
+		<tr><td>ID</td><td>${user.id}</td></tr>
+		<tr><td>E-mail</td><td>${user.email}</td></tr>
+		<tr><td>Data urodzenia</td><td>${user.birthday}</td></tr>
+		<tr><td>Zdjęcie</td><td><img src="${user.picture.data.url}"/></td></tr>
+		</table>
+		`;
     document.getElementById('app').innerHTML = dane;
   }
 
   function wyswietl(czy_zalogowany){
     if(czy_zalogowany){ 
       document.getElementById('logout').style.display = 'block';
-      document.getElementById('app').style.display = 'block';
+      // document.getElementById('app').style.display = 'block';
       document.getElementById('fb-btn').style.display = 'none';
     } else {  
       document.getElementById('logout').style.display = 'none';
-      document.getElementById('app').style.display = 'none';
+      // document.getElementById('app').style.display = 'none';
       document.getElementById('fb-btn').style.display = 'block';
-      // document.getElementById('naglowek').innerHTML = `Nie jesteś zalogowany(a), zaloguj się!`;
+      document.getElementById('app').innerHTML = `Zaloguj się przyciskiem w prawym górnym rogu strony`;
     }
   }
 
